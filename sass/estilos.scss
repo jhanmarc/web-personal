@@ -6,6 +6,15 @@ $hover: #2BFCBB;
 $font-Gilroy :  "Gilroy", sans-serif;
 $font-League :  "League Spartan", sans-serif;
 
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/Gilroy/gilroy_extrabold.ttf');
+}
+@font-face {
+  font-family: "League Spartan";
+  src: url('/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.ttf');
+}
+
 body{
   margin: 0;
   padding: 0;
