@@ -6,15 +6,21 @@ $hover: #2BFCBB;
 $font-Gilroy :  "Gilroy", sans-serif;
 $font-League :  "League Spartan", sans-serif;
 
-@font-face {
-  font-family: "Gilroy";
-  src: url('/assets/fonts/Gilroy/gilroy_extrabold.ttf');
-}
-@font-face {
-  font-family: "League Spartan";
-  src: url('/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.ttf');
-}
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('/assets/fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.woff2') format('woff2'),
+      url('/assets/fonts/LeagueSpartan/LeagueSpartan-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 body{
   margin: 0;
   padding: 0;
