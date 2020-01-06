@@ -1,0 +1,403 @@
+$texto-white: #F8F8F8;
+$principal: #F94258;
+$secundario: #161931;
+$hover: #2BFCBB;
+
+$font-Gilroy :  "Gilroy", sans-serif;
+$font-League :  "League Spartan", sans-serif;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $font-League;
+  font-weight: 900;
+}
+// .row {
+//   border: 1px solid blue; }
+
+// .row > * {
+//   border: 1px solid green; }
+
+#fullpage section h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 10em;
+  text-transform: uppercase;
+  color: rgb(216, 216, 216);
+}
+
+.contenedor{
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  /* no sobrepasar los limites de contenedor */
+  overflow: hidden;
+}
+
+.contenedor1{
+  width: 90%;
+  max-width: 1252px;
+  margin: auto;
+  /* no sobrepasar los limites de contenedor */
+  overflow: hidden;
+  padding: 60px 0px;
+}
+
+#fullpage{
+  height: 100vh;
+  overflow: hidden;
+}
+#fullpage section{
+  height: 100vh;
+}
+
+#fullpage section h1{
+  margin: 0;
+  padding: 0;
+
+}
+.home{
+  background: $secundario;
+  width: 100%;
+  height: 100%;
+}
+
+.left-page{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.left-page .init{
+  background: $principal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header  */
+header::before{
+  content: "";
+  display: block;
+  margin-bottom: 80px;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid transparent;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2) ;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition:  ease-in-out 0.5s;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 90%;
+  align-items: center;
+  padding: 0 40px;
+}
+.nav .logo{
+  height: 70px;
+}
+.nav .logo img{
+  height: 80%;
+  vertical-align: top;
+}
+
+.enlaces-header{
+  font-weight: 300;
+  transition:  ease-in-out 0.5s;
+}
+.nav .enlaces-header a{
+  color: $texto-white;
+  text-decoration: none;
+  margin-left: 80px;
+  font-size: 18px;
+}
+
+.nav .enlaces-header a:hover{
+  color: $hover;
+}
+.hamburguer{
+  width: 80px;
+  height: 80px;
+  display: none;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+.hamburguer > i{
+  font-size: 25px;
+  line-height: 88px;
+  color: $principal;
+}
+
+.center-content{
+  padding: 20vh 165px 20vh 20%;
+}
+.contenido-header{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-header > img{
+  width: 550px;
+  animation: ease-in animat 0.5s;
+}
+
+@keyframes animat{
+  0%{
+    transform: scale(0.5);
+  }100%{
+    transform: scale(1);
+  }
+}
+.texto-header{
+  margin: 0 0 0 30px;
+
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.contenido-header1 {
+  position: absolute;
+  width: 1182.5px;
+  height: 358px;
+  left: 11%;
+  top: 150px;
+}
+
+.text_j {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+}
+// .text_j span{
+//   text-align: left;
+//   font-family: Gilroy;
+//   font-weight: bold;
+//   font-size: 150px;
+//   color:$texto-white;
+// }
+.text_j img{
+  padding: 30px 0 10px 20px;
+  width: 60%;
+}
+.text_s {
+  margin: 0;
+  padding: 0;
+}
+.text_s img{
+  padding: 5px 0 10px 30px;
+  width: 80%;
+}
+.icons path:hover{
+  fill: $hover;
+}
+.icon_link {
+ padding: 20px 0 20px 150px;
+}
+.icon_link svg{
+  width: 34.875px;
+  height: 31.004px;
+}
+.icon_beha {
+  padding: 25px 0 25px 150px;
+}
+.icon_beha svg{
+  width: 40.5px;
+  height: 25.39px;
+}
+.icon_git {
+  padding: 20px 0 20px 150px;
+}
+.icon_git svg{
+  width: 34.88px;
+  height: 34px;
+}
+
+.text_d span{
+  padding: 0 0 0 40px;
+  font-family: League Spartan;
+  font-weight: bold;
+  font-size: 20px;
+  color: $texto-white;
+  align-items: center;
+}
+.text-sobreB {
+  color: #fff;
+  padding: 0 0 0 30px;
+}
+.text-sobreB>a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid white;
+  padding: 10px 0 10px 20px;
+  width: 130px;
+  font-weight: 15px;
+  font-family: Gilroy;
+  // text-align: center;
+  // border-radius: 10px;
+}
+.text-sobreB>a:hover{
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, .2) ;
+  color: #fff;
+  background: $hover;
+  border-color: $hover;
+}
+
+.scroll span{
+  position: absolute;
+  top: 100px;
+  left: 48%;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: $texto-white;
+}
+
+@media screen and (max-width:600px) {
+  .contenido-header1 {
+    position: absolute;
+    width: 80%;
+    top: 130px;
+  }
+  .text_d{
+    text-align: center;
+  }
+  .text_d span{
+    font-size: 13px;
+    padding: 0 0 0 0;
+  }
+  .contenido-header {
+    height: 650px;
+  }
+
+  .nav {
+      padding: 0 10px;
+  }
+
+  .contenido-header>img {
+      width: 200px;
+  }
+
+  .enlaces-header {
+      position: fixed;
+      background: #667db6;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      clip-path: circle(0.0% at 100% 0);
+  }
+  .nav .enlaces-header a{
+    margin-left: 20px;
+  }
+
+  .nav .menudos {
+      -webkit-clip-path: circle(150% at 100% 0);
+      clip-path: circle(150% at 100% 0);
+  }
+
+  .nav .enlaces-header a {
+      color: #fff;
+  }
+
+  .hamburguer {
+      display: block;
+  }
+  .fila-2{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column-reverse wrap;
+    flex-flow: column-reverse wrap;
+    -webkit-justify-content: flex-end;
+    justify-content:flex-end;
+  }
+  // jhan
+  .text_j img{
+    padding: 30px 0 10px 0px;
+    width: 75%;
+  }
+  //Soto
+  .text_s img{
+    padding: 5px 0 10px 50%;
+    width: 100%;
+  }
+
+  // sobreMi
+  .text-sobreB {
+    color: #fff;
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .text-sobreB>a{
+    padding: 10px 0;
+    // text-align: center;
+    // border-radius: 10px;
+  }
+  // iconos
+  .icons{
+    text-align: center;
+  }
+  .icon_link {
+    padding: 25px 30px;
+   }   
+   .icon_beha {
+    padding: 25px 30px;
+   }
+   .icon_git {
+     padding: 25px 30px;
+   }
+
+  //  textScroll
+  .text-scroll{
+    text-align: center;
+  }
+  .scroll span{
+    position: initial;
+    font-size: 14px;
+    color: $texto-white;
+  }
+
+  #fullpage section h1 {
+    font-size: 2em;
+  }
+
+}
+
+#fullpage .portafolio{
+  background: $texto-white
+}
+#fullpage .sobre{
+  background: $principal
+}
+#fullpage .contact{
+  background: $secundario
+}
